@@ -1,3 +1,15 @@
 pool: MyAgentPool
 steps:
 - bash: echo hello world
+
+- main
+
+grupo:
+  name: Default 
+
+variables:
+  buildConfiguration: 'Release'
+
+pasos: 
+-script: dotnet build --configuration $(buildConfiguration)
+  displayName: 'dotnet build $(buildConfiguration)'
