@@ -11,5 +11,5 @@ variables:
   buildConfiguration: 'Release'
 
 pasos: 
--script: dotnet build --configuration $(buildConfiguration)
+- script: dotnet build --configuration $(buildConfiguration)
   displayName: 'dotnet build $(buildConfiguration)'
