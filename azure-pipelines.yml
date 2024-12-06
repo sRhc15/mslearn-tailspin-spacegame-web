@@ -1,15 +1,16 @@
-pool: MyAgentPool
-steps:
-- bash: echo hello world
+#pool: MyAgentPool
+#steps:
+#- bash: echo hello world
 
-#- main
+trigger:
+- main
 
-#grupo
+pool:
   name: Default 
 
 variables:
   buildConfiguration: 'Release'
 
-#pasos: 
+steps: 
 - script: dotnet build --configuration $(buildConfiguration)
   displayName: 'dotnet build $(buildConfiguration)'
