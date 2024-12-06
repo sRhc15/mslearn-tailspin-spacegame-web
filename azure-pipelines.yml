@@ -4,7 +4,7 @@ steps:
 
 - main
 
-grupo:
+
   name: Default 
 
 variables:
